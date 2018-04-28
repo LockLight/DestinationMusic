@@ -14,6 +14,7 @@
 		CD22303F20930B1C007A8239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD22303D20930B1C007A8239 /* LaunchScreen.storyboard */; };
 		CD22304A20930B1C007A8239 /* DestinationMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22304920930B1C007A8239 /* DestinationMusicTests.swift */; };
 		CD22305520930B1C007A8239 /* DestinationMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22305420930B1C007A8239 /* DestinationMusicUITests.swift */; };
+		CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E75B620940D620025F4F7 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CD22305020930B1C007A8239 /* DestinationMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestinationMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22305420930B1C007A8239 /* DestinationMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMusicUITests.swift; sourceTree = "<group>"; };
 		CD22305620930B1C007A8239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5E75B620940D620025F4F7 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CD22303B20930B1C007A8239 /* Assets.xcassets */,
 				CD22303D20930B1C007A8239 /* LaunchScreen.storyboard */,
 				CD22304020930B1C007A8239 /* Info.plist */,
+				CD5E75B620940D620025F4F7 /* SearchResult.swift */,
 			);
 			path = DestinationMusic;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD22303720930B13007A8239 /* SearchViewController.swift in Sources */,
+				CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */,
 				CD22303520930B13007A8239 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

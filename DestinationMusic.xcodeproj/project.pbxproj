@@ -15,6 +15,10 @@
 		CD22304A20930B1C007A8239 /* DestinationMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22304920930B1C007A8239 /* DestinationMusicTests.swift */; };
 		CD22305520930B1C007A8239 /* DestinationMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22305420930B1C007A8239 /* DestinationMusicUITests.swift */; };
 		CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E75B620940D620025F4F7 /* SearchResult.swift */; };
+		CD5E75BE20941AF00025F4F7 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E75BC20941AF00025F4F7 /* SearchResultCell.swift */; };
+		CD5E75BF20941AF00025F4F7 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5E75BD20941AF00025F4F7 /* SearchResultCell.xib */; };
+		CD5E75C220941CF10025F4F7 /* NothingResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E75C020941CF10025F4F7 /* NothingResultCell.swift */; };
+		CD5E75C320941CF10025F4F7 /* NothingResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5E75C120941CF10025F4F7 /* NothingResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		CD22305420930B1C007A8239 /* DestinationMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMusicUITests.swift; sourceTree = "<group>"; };
 		CD22305620930B1C007A8239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5E75B620940D620025F4F7 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		CD5E75BC20941AF00025F4F7 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		CD5E75BD20941AF00025F4F7 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		CD5E75C020941CF10025F4F7 /* NothingResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NothingResultCell.swift; sourceTree = "<group>"; };
+		CD5E75C120941CF10025F4F7 /* NothingResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				CD22303D20930B1C007A8239 /* LaunchScreen.storyboard */,
 				CD22304020930B1C007A8239 /* Info.plist */,
 				CD5E75B620940D620025F4F7 /* SearchResult.swift */,
+				CD5E75BC20941AF00025F4F7 /* SearchResultCell.swift */,
+				CD5E75BD20941AF00025F4F7 /* SearchResultCell.xib */,
+				CD5E75C020941CF10025F4F7 /* NothingResultCell.swift */,
+				CD5E75C120941CF10025F4F7 /* NothingResultCell.xib */,
 			);
 			path = DestinationMusic;
 			sourceTree = "<group>";
@@ -234,6 +246,8 @@
 			files = (
 				CD22303F20930B1C007A8239 /* LaunchScreen.storyboard in Resources */,
 				CD22303C20930B1C007A8239 /* Assets.xcassets in Resources */,
+				CD5E75BF20941AF00025F4F7 /* SearchResultCell.xib in Resources */,
+				CD5E75C320941CF10025F4F7 /* NothingResultCell.xib in Resources */,
 				CD22303A20930B13007A8239 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +275,9 @@
 			files = (
 				CD22303720930B13007A8239 /* SearchViewController.swift in Sources */,
 				CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */,
+				CD5E75BE20941AF00025F4F7 /* SearchResultCell.swift in Sources */,
 				CD22303520930B13007A8239 /* AppDelegate.swift in Sources */,
+				CD5E75C220941CF10025F4F7 /* NothingResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

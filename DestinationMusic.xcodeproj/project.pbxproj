@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD14E5BC209AE5C100D609CA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14E5BA209AE5C100D609CA /* LoadingCell.swift */; };
+		CD14E5BD209AE5C100D609CA /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD14E5BB209AE5C100D609CA /* LoadingCell.xib */; };
 		CD22303520930B13007A8239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22303420930B13007A8239 /* AppDelegate.swift */; };
 		CD22303720930B13007A8239 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22303620930B13007A8239 /* SearchViewController.swift */; };
 		CD22303A20930B13007A8239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD22303820930B13007A8239 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD14E5BA209AE5C100D609CA /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		CD14E5BB209AE5C100D609CA /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		CD22303120930B13007A8239 /* DestinationMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DestinationMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22303420930B13007A8239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD22303620930B13007A8239 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				CD5E75BD20941AF00025F4F7 /* SearchResultCell.xib */,
 				CD5E75C020941CF10025F4F7 /* NothingResultCell.swift */,
 				CD5E75C120941CF10025F4F7 /* NothingResultCell.xib */,
+				CD14E5BA209AE5C100D609CA /* LoadingCell.swift */,
+				CD14E5BB209AE5C100D609CA /* LoadingCell.xib */,
 			);
 			path = DestinationMusic;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			files = (
 				CD22303F20930B1C007A8239 /* LaunchScreen.storyboard in Resources */,
 				CD22303C20930B1C007A8239 /* Assets.xcassets in Resources */,
+				CD14E5BD209AE5C100D609CA /* LoadingCell.xib in Resources */,
 				CD5E75BF20941AF00025F4F7 /* SearchResultCell.xib in Resources */,
 				CD5E75C320941CF10025F4F7 /* NothingResultCell.xib in Resources */,
 				CD22303A20930B13007A8239 /* Main.storyboard in Resources */,
@@ -273,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD14E5BC209AE5C100D609CA /* LoadingCell.swift in Sources */,
 				CD22303720930B13007A8239 /* SearchViewController.swift in Sources */,
 				CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */,
 				CD5E75BE20941AF00025F4F7 /* SearchResultCell.swift in Sources */,

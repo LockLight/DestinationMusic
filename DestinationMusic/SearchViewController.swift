@@ -100,13 +100,12 @@ class SearchViewController: UIViewController {
                     if let data = data{
                         self.searchResults = self.parse(data: data)
                         self.searchResults.sort(by: <)
+                        
+                        DispatchQueue.main.async {
+                            self.isLoading = false
+                            self.tableView.reloadData()
+                        }
                     }
-                    DispatchQueue.main.async {
-                        self.hasSearched = false
-                        self.isLoading = false
-                        self.tableView.reloadData()
-                    }
-                    
                     return
                 }else{
                     print("Success\(response!)")

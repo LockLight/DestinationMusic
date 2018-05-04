@@ -29,4 +29,13 @@ class SearchResultCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func configure(for result:SearchResult){
+        nameLabel.text = result.name
+        
+        if result.artistName.isEmpty{
+            artistNameLabel.text = "Unknown"
+        }else{
+            artistNameLabel.text = String(format: "%@ (%@)",result.artistName,result.type)
+        }
+    }
 }

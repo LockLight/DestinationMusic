@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,6 +34,18 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="E2x-LR-z9P"/>
                                 </connections>
                             </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-jM-qDK">
+                                <rect key="frame" x="19" y="84" width="337.5" height="29"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Music"/>
+                                    <segment title="Software"/>
+                                    <segment title="E-books"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="E4B-Qp-QZ5"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -43,10 +56,14 @@
                             <constraint firstItem="vMG-oo-KIv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iVV-zJ-3tg"/>
                             <constraint firstItem="n95-Xj-h2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kGj-Gs-0JB"/>
                             <constraint firstItem="vMG-oo-KIv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l5z-Ac-MHR"/>
+                            <constraint firstItem="oaf-jM-qDK" firstAttribute="top" secondItem="vMG-oo-KIv" secondAttribute="bottom" constant="8" id="oDC-6i-BJ3"/>
+                            <constraint firstItem="oaf-jM-qDK" firstAttribute="centerX" secondItem="vMG-oo-KIv" secondAttribute="centerX" id="saM-Yc-GWn"/>
+                            <constraint firstItem="oaf-jM-qDK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="tpV-ei-6Rm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SegmentControl" destination="oaf-jM-qDK" id="8Hi-Ta-uNt"/>
                         <outlet property="searchBar" destination="vMG-oo-KIv" id="FOv-5X-3fI"/>
                         <outlet property="tableView" destination="n95-Xj-h2f" id="Hhq-zV-Vkc"/>
                     </connections>

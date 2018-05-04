@@ -13,7 +13,6 @@
 		CD22303720930B13007A8239 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22303620930B13007A8239 /* SearchViewController.swift */; };
 		CD22303A20930B13007A8239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD22303820930B13007A8239 /* Main.storyboard */; };
 		CD22303C20930B1C007A8239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD22303B20930B1C007A8239 /* Assets.xcassets */; };
-		CD22303F20930B1C007A8239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD22303D20930B1C007A8239 /* LaunchScreen.storyboard */; };
 		CD22304A20930B1C007A8239 /* DestinationMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22304920930B1C007A8239 /* DestinationMusicTests.swift */; };
 		CD22305520930B1C007A8239 /* DestinationMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22305420930B1C007A8239 /* DestinationMusicUITests.swift */; };
 		CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E75B620940D620025F4F7 /* SearchResult.swift */; };
@@ -48,7 +47,6 @@
 		CD22303620930B13007A8239 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CD22303920930B13007A8239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD22303B20930B1C007A8239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CD22303E20930B1C007A8239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD22304020930B1C007A8239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD22304520930B1C007A8239 /* DestinationMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestinationMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22304920930B1C007A8239 /* DestinationMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMusicTests.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				CD22303620930B13007A8239 /* SearchViewController.swift */,
 				CD22303820930B13007A8239 /* Main.storyboard */,
 				CD22303B20930B1C007A8239 /* Assets.xcassets */,
-				CD22303D20930B1C007A8239 /* LaunchScreen.storyboard */,
 				CD22304020930B1C007A8239 /* Info.plist */,
 				CD5E75B620940D620025F4F7 /* SearchResult.swift */,
 				CD5E75BC20941AF00025F4F7 /* SearchResultCell.swift */,
@@ -250,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD22303F20930B1C007A8239 /* LaunchScreen.storyboard in Resources */,
 				CD22303C20930B1C007A8239 /* Assets.xcassets in Resources */,
 				CD14E5BD209AE5C100D609CA /* LoadingCell.xib in Resources */,
 				CD5E75BF20941AF00025F4F7 /* SearchResultCell.xib in Resources */,
@@ -327,14 +323,6 @@
 				CD22303920930B13007A8239 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD22303D20930B1C007A8239 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD22303E20930B1C007A8239 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

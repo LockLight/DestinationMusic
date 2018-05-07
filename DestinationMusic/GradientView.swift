@@ -21,7 +21,7 @@ class GradientView: UIView {
     
     override func draw(_ rect: CGRect) {
         // 1
-        let components:[CGFloat] = [0,0,0,0.3,0,0,0,0.7]
+        let components:[CGFloat] = [ 0, 0, 0, 0.3, 0, 0, 0, 0.7 ]
         let locations:[CGFloat] = [0,1]
         
         // 2

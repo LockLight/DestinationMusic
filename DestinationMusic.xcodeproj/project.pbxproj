@@ -24,6 +24,8 @@
 		CD73085820A0035100AF0C0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085720A0035100AF0C0D /* DetailViewController.swift */; };
 		CD73085A20A028AB00AF0C0D /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085920A028AB00AF0C0D /* DimmingPresentationController.swift */; };
 		CD73085C20A04ED900AF0C0D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085B20A04ED900AF0C0D /* GradientView.swift */; };
+		CD73085E20A0535F00AF0C0D /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085D20A0535F00AF0C0D /* BounceAnimationController.swift */; };
+		CD73086020A0589C00AF0C0D /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085F20A0589C00AF0C0D /* SlideOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		CD73085720A0035100AF0C0D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CD73085920A028AB00AF0C0D /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		CD73085B20A04ED900AF0C0D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CD73085D20A0535F00AF0C0D /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
+		CD73085F20A0589C00AF0C0D /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				CD73085720A0035100AF0C0D /* DetailViewController.swift */,
 				CD73085920A028AB00AF0C0D /* DimmingPresentationController.swift */,
 				CD73085B20A04ED900AF0C0D /* GradientView.swift */,
+				CD73085D20A0535F00AF0C0D /* BounceAnimationController.swift */,
+				CD73085F20A0589C00AF0C0D /* SlideOutAnimationController.swift */,
 			);
 			path = DestinationMusic;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 				CD5E75BE20941AF00025F4F7 /* SearchResultCell.swift in Sources */,
 				CD22303520930B13007A8239 /* AppDelegate.swift in Sources */,
 				CD5E75C220941CF10025F4F7 /* NothingResultCell.swift in Sources */,
+				CD73085E20A0535F00AF0C0D /* BounceAnimationController.swift in Sources */,
 				CD73085820A0035100AF0C0D /* DetailViewController.swift in Sources */,
 				CD73085A20A028AB00AF0C0D /* DimmingPresentationController.swift in Sources */,
+				CD73086020A0589C00AF0C0D /* SlideOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

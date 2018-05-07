@@ -23,6 +23,7 @@
 		CD5E75C320941CF10025F4F7 /* NothingResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5E75C120941CF10025F4F7 /* NothingResultCell.xib */; };
 		CD73085820A0035100AF0C0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085720A0035100AF0C0D /* DetailViewController.swift */; };
 		CD73085A20A028AB00AF0C0D /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085920A028AB00AF0C0D /* DimmingPresentationController.swift */; };
+		CD73085C20A04ED900AF0C0D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085B20A04ED900AF0C0D /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		CD5E75C120941CF10025F4F7 /* NothingResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingResultCell.xib; sourceTree = "<group>"; };
 		CD73085720A0035100AF0C0D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CD73085920A028AB00AF0C0D /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
+		CD73085B20A04ED900AF0C0D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				CD14E5BB209AE5C100D609CA /* LoadingCell.xib */,
 				CD73085720A0035100AF0C0D /* DetailViewController.swift */,
 				CD73085920A028AB00AF0C0D /* DimmingPresentationController.swift */,
+				CD73085B20A04ED900AF0C0D /* GradientView.swift */,
 			);
 			path = DestinationMusic;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				CD14E5C1209C60B000D609CA /* UIImageView+DownloadImage.swift in Sources */,
 				CD14E5BC209AE5C100D609CA /* LoadingCell.swift in Sources */,
+				CD73085C20A04ED900AF0C0D /* GradientView.swift in Sources */,
 				CD22303720930B13007A8239 /* SearchViewController.swift in Sources */,
 				CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */,
 				CD5E75BE20941AF00025F4F7 /* SearchResultCell.swift in Sources */,

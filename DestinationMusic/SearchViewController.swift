@@ -34,12 +34,20 @@ class SearchViewController: UIViewController {
         tableView.register(UINib(nibName:TableViewIndentifier.SearchResultCell, bundle: nil), forCellReuseIdentifier: TableViewIndentifier.SearchResultCell)
         tableView.register(UINib(nibName:TableViewIndentifier.NothingResultCell, bundle: nil), forCellReuseIdentifier: TableViewIndentifier.NothingResultCell)
         tableView.register(UINib(nibName: TableViewIndentifier.LoadingCell, bundle: nil), forCellReuseIdentifier: TableViewIndentifier.LoadingCell)
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail"{
+            let detailViewController = segue.destination as! DetailViewController
+            let indexPath = sender as! IndexPath
+            detailViewController.searchResult = searchResults[indexPath.row]
+        }
     }
     
     //MARK: - private methods
@@ -170,6 +178,11 @@ extension SearchViewController:UITableViewDelegate,UITableViewDataSource{
         }else{
             return indexPath
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "ShowDetail", sender:indexPath)
     }
 }
 

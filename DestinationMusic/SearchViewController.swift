@@ -19,6 +19,8 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var SegmentControl: UISegmentedControl!
     
+    var landScapeVC:LandscapeViewController?
+    
     var searchResults = [SearchResult]()
     var hasSearched = false
     var isLoading = false
@@ -36,9 +38,16 @@ class SearchViewController: UIViewController {
         tableView.register(UINib(nibName: TableViewIndentifier.LoadingCell, bundle: nil), forCellReuseIdentifier: TableViewIndentifier.LoadingCell)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK: - rotation
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super .willTransition(to: newCollection, with: coordinator)
+        
+        switch newCollection.verticalSizeClass {
+            case .compact:
+                showLandScape(with: coordinator)
+            case .regular,.unspecified:
+                hideLandScape(with: coordinator)
+        }
     }
     
     //MARK: - Navigation
@@ -51,6 +60,48 @@ class SearchViewController: UIViewController {
     }
     
     //MARK: - private methods
+    func showLandScape(with coordinator:UIViewControllerTransitionCoordinator){
+        // 1
+        guard landScapeVC == nil else {return}
+        // 2
+        landScapeVC = storyboard!.instantiateViewController(withIdentifier: "LandscapeViewController") as? LandscapeViewController
+        // 3
+        if let VC = landScapeVC {
+            VC.view.frame = view.bounds
+            VC.view.alpha = 0
+            view.addSubview(VC.view)
+            addChildViewController(VC)
+            
+            coordinator.animate(alongsideTransition: { (_) in
+                VC.view.alpha = 1
+                self.searchBar.resignFirstResponder()
+                if self.presentedViewController != nil {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            }) { (_) in
+                VC.didMove(toParentViewController: self)
+            }
+        }
+    }
+    
+    func hideLandScape(with coordinator:UIViewControllerTransitionCoordinator){
+        if let VC = landScapeVC{
+            VC.willMove(toParentViewController: nil)
+            
+            coordinator.animate(alongsideTransition: { (_) in
+                VC.view.alpha = 0
+                self.searchBar.becomeFirstResponder()
+                if self.presentedViewController != nil {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            }) { (_) in
+                VC.view.removeFromSuperview()
+                VC.removeFromParentViewController()
+                self.landScapeVC = nil
+            }
+        }
+    }
+    
     func iTunesURL(searchText:String,category:Int) -> URL {
         let kind:String
         switch category {

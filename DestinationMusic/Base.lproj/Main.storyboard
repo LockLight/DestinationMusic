@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-EM-NCI" userLabel="Pop-up View">
-                                <rect key="frame" x="67" y="223.5" width="240" height="240"/>
+                                <rect key="frame" x="67.5" y="223.5" width="240" height="240"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZ0-g9-8iP">
                                         <rect key="frame" x="4" y="2" width="15" height="18"/>
@@ -167,7 +167,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-ej-KR3">
-                                <rect key="frame" x="137" y="413.5" width="89" height="21"/>
+                                <rect key="frame" x="137.5" y="413.5" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -197,6 +197,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzp-m5-9VS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1010" y="20"/>
+        </scene>
+        <!--Landscape View Controller-->
+        <scene sceneID="Y5z-eH-voV">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeViewController" id="8Ba-wG-iwV" customClass="LandscapeViewController" customModule="DestinationMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xD-wQ-ZWA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Landscape" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwI-cq-ebg">
+                                <rect key="frame" x="136.5" y="333.5" width="102" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iwI-cq-ebg" firstAttribute="centerX" secondItem="7vD-D1-Jl2" secondAttribute="centerX" id="nPu-AH-Vjl"/>
+                            <constraint firstItem="iwI-cq-ebg" firstAttribute="centerY" secondItem="7vD-D1-Jl2" secondAttribute="centerY" id="vzw-0A-ARn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7vD-D1-Jl2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikg-oy-5mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.3763118440781" y="26.399999999999999"/>
         </scene>
     </scenes>
     <resources>

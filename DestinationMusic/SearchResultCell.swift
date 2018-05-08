@@ -14,7 +14,7 @@ class SearchResultCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var artistNameLabel: UILabel!
     
-    var downloadTask:URLSessionDownloadTask?
+    private var downloadTask:URLSessionDownloadTask?
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController.swift
 //  DestinationMusic
 //
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct TableViewIndentifier {
+private struct TableViewIndentifier {
     static let SearchResultCell = "SearchResultCell"
     static let NothingResultCell = "NothingResultCell"
     static let LoadingCell = "LoadingCell"
@@ -22,9 +22,9 @@ class SearchViewController: UIViewController {
     var landScapeVC:LandscapeViewController?
     
     var searchResults = [SearchResult]()
-    var hasSearched = false
-    var isLoading = false
-    var dataTask:URLSessionDataTask?
+    private var hasSearched = false
+    private var isLoading = false
+    private var dataTask:URLSessionDataTask?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,11 +67,13 @@ class SearchViewController: UIViewController {
         landScapeVC = storyboard!.instantiateViewController(withIdentifier: "LandscapeViewController") as? LandscapeViewController
         // 3
         if let VC = landScapeVC {
+            VC.searchResults = searchResults
+            
             VC.view.frame = view.bounds
             VC.view.alpha = 0
             view.addSubview(VC.view)
             addChildViewController(VC)
-            
+        
             coordinator.animate(alongsideTransition: { (_) in
                 VC.view.alpha = 1
                 self.searchBar.resignFirstResponder()
@@ -90,10 +92,6 @@ class SearchViewController: UIViewController {
             
             coordinator.animate(alongsideTransition: { (_) in
                 VC.view.alpha = 0
-                self.searchBar.becomeFirstResponder()
-                if self.presentedViewController != nil {
-                    self.dismiss(animated: true, completion: nil)
-                }
             }) { (_) in
                 VC.view.removeFromSuperview()
                 VC.removeFromParentViewController()
@@ -152,6 +150,7 @@ class SearchViewController: UIViewController {
             dataTask = session.dataTask(with: url) { (data, response, error) in
                 if let error = error as NSError? , error.code == -999{
                     print("Failure\(error)")
+                    self.showNetWorkError()
                     return
                 }else if let httpResponse = response as? HTTPURLResponse,httpResponse.statusCode == 200{
                     print("Success\(data!)")
@@ -173,7 +172,6 @@ class SearchViewController: UIViewController {
                     self.hasSearched = false
                     self.isLoading = false
                     self.tableView.reloadData()
-                    self.showNetWorkError()
                 }
             }
             dataTask?.resume()

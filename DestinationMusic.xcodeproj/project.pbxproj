@@ -27,6 +27,7 @@
 		CD73085E20A0535F00AF0C0D /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085D20A0535F00AF0C0D /* BounceAnimationController.swift */; };
 		CD73086020A0589C00AF0C0D /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73085F20A0589C00AF0C0D /* SlideOutAnimationController.swift */; };
 		CD73086220A14BC600AF0C0D /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73086120A14BC600AF0C0D /* LandscapeViewController.swift */; };
+		CD73086420A1826B00AF0C0D /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73086320A1826B00AF0C0D /* FadeOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		CD73085D20A0535F00AF0C0D /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		CD73085F20A0589C00AF0C0D /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		CD73086120A14BC600AF0C0D /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		CD73086320A1826B00AF0C0D /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				CD73085B20A04ED900AF0C0D /* GradientView.swift */,
 				CD73085D20A0535F00AF0C0D /* BounceAnimationController.swift */,
 				CD73085F20A0589C00AF0C0D /* SlideOutAnimationController.swift */,
+				CD73086320A1826B00AF0C0D /* FadeOutAnimationController.swift */,
 				CD73086120A14BC600AF0C0D /* LandscapeViewController.swift */,
 			);
 			path = DestinationMusic;
@@ -299,6 +302,7 @@
 			files = (
 				CD14E5C1209C60B000D609CA /* UIImageView+DownloadImage.swift in Sources */,
 				CD14E5BC209AE5C100D609CA /* LoadingCell.swift in Sources */,
+				CD73086420A1826B00AF0C0D /* FadeOutAnimationController.swift in Sources */,
 				CD73085C20A04ED900AF0C0D /* GradientView.swift in Sources */,
 				CD22303720930B13007A8239 /* SearchViewController.swift in Sources */,
 				CD5E75B720940D620025F4F7 /* SearchResult.swift in Sources */,

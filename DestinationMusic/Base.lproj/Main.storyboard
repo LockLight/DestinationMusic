@@ -206,24 +206,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Landscape" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwI-cq-ebg">
-                                <rect key="frame" x="136.5" y="333.5" width="102" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-i1-TPs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8Ba-wG-iwV" id="fDi-ZQ-SeF"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aBx-Jc-eci">
+                                <rect key="frame" x="168" y="600" width="39" height="37"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="8Ba-wG-iwV" eventType="valueChanged" id="6Js-4d-YHj"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iwI-cq-ebg" firstAttribute="centerX" secondItem="7vD-D1-Jl2" secondAttribute="centerX" id="nPu-AH-Vjl"/>
-                            <constraint firstItem="iwI-cq-ebg" firstAttribute="centerY" secondItem="7vD-D1-Jl2" secondAttribute="centerY" id="vzw-0A-ARn"/>
+                            <constraint firstItem="7vD-D1-Jl2" firstAttribute="bottom" secondItem="aBx-Jc-eci" secondAttribute="bottom" constant="30" id="Ep3-kJ-A0t"/>
+                            <constraint firstItem="7vD-D1-Jl2" firstAttribute="trailing" secondItem="7tV-i1-TPs" secondAttribute="trailing" id="Oka-mz-O7o"/>
+                            <constraint firstItem="7tV-i1-TPs" firstAttribute="leading" secondItem="7vD-D1-Jl2" secondAttribute="leading" id="XS6-mb-B1d"/>
+                            <constraint firstItem="7tV-i1-TPs" firstAttribute="top" secondItem="7vD-D1-Jl2" secondAttribute="top" id="aQK-qd-can"/>
+                            <constraint firstItem="7vD-D1-Jl2" firstAttribute="bottom" secondItem="7tV-i1-TPs" secondAttribute="bottom" id="exu-aT-4Jm"/>
+                            <constraint firstItem="aBx-Jc-eci" firstAttribute="centerX" secondItem="7tV-i1-TPs" secondAttribute="centerX" id="tk6-jj-ofg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7vD-D1-Jl2"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="aBx-Jc-eci" id="mbo-8F-fjA"/>
+                        <outlet property="scrollView" destination="7tV-i1-TPs" id="geI-OI-jfy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikg-oy-5mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747.3763118440781" y="26.399999999999999"/>
+            <point key="canvasLocation" x="608" y="870"/>
         </scene>
     </scenes>
     <resources>

@@ -9,6 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    private enum AnimationStyle {
+        case Slide
+        case Fade
+    }
+    
     @IBOutlet weak var popupView: UIView!
     @IBOutlet weak var artworkImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -18,8 +24,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var priceButton: UIButton!
     
     var downloadTask:URLSessionDownloadTask?
-    
     var searchResult:SearchResult!
+    private var dismissStyle = AnimationStyle.Fade
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +85,7 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func close(_ sender: UIButton) {
+        dismissStyle = .Slide
         dismiss(animated: true, completion: nil)
     }
     
@@ -98,7 +106,12 @@ extension DetailViewController:UIViewControllerTransitioningDelegate{
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideOutAnimationController()
+        switch dismissStyle {
+            case .Fade:
+                return FadeOutAnimationController()
+            case .Slide:
+                return SlideOutAnimationController()
+        }
     }
 }
 

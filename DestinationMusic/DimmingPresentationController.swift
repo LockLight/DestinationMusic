@@ -9,7 +9,7 @@
 import UIKit
 
 class DimmingPresentationController: UIPresentationController {
-    lazy var dimmingView = GradientView(frame: CGRect.zero)
+    private lazy var dimmingView = GradientView(frame: CGRect.zero)
     
     override func presentationTransitionWillBegin() {
         dimmingView.frame = containerView!.bounds

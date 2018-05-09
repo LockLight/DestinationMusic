@@ -39,8 +39,9 @@ class Search{
     private var dataTask:URLSessionDataTask? = nil
     
     func performSearch(for text:String ,category:Category ,completion:@escaping SearchComplete){
-        if  text.isEmpty{
+        if  !text.isEmpty{
             dataTask?.cancel()
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
             
             state = .loading
             
@@ -77,6 +78,7 @@ class Search{
                     print("Failure:\(response!)")
                 
                 DispatchQueue.main.async {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
                     self.state = newState
                     completion(success)
                 }

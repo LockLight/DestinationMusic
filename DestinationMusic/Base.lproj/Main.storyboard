@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,11 +16,11 @@
             <objects>
                 <viewController storyboardIdentifier="SearchViewController" id="BYZ-38-t0r" customClass="SearchViewController" customModule="DestinationMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n95-Xj-h2f">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="KNf-eO-rxv"/>
@@ -28,14 +28,14 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="App name, artist, song, album, e-book." translatesAutoresizingMaskIntoConstraints="NO" id="vMG-oo-KIv">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="E2x-LR-z9P"/>
                                 </connections>
                             </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-jM-qDK">
-                                <rect key="frame" x="19" y="84" width="337.5" height="29"/>
+                                <rect key="frame" x="33.5" y="64" width="600.5" height="29"/>
                                 <segments>
                                     <segment title="All"/>
                                     <segment title="Music"/>
@@ -78,11 +78,11 @@
             <objects>
                 <viewController id="YOs-pg-FcS" customClass="DetailViewController" customModule="DestinationMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fD2-MZ-H60">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-EM-NCI" userLabel="Pop-up View">
-                                <rect key="frame" x="67.5" y="223.5" width="240" height="240"/>
+                                <rect key="frame" x="213.5" y="67.5" width="240" height="240"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZ0-g9-8iP">
                                         <rect key="frame" x="4" y="2" width="15" height="18"/>
@@ -167,7 +167,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-ej-KR3">
-                                <rect key="frame" x="137.5" y="413.5" width="89" height="21"/>
+                                <rect key="frame" x="283.5" y="257.5" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -203,17 +203,17 @@
             <objects>
                 <viewController storyboardIdentifier="LandscapeViewController" id="8Ba-wG-iwV" customClass="LandscapeViewController" customModule="DestinationMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xD-wQ-ZWA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-i1-TPs">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <connections>
                                     <outlet property="delegate" destination="8Ba-wG-iwV" id="fDi-ZQ-SeF"/>
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aBx-Jc-eci">
-                                <rect key="frame" x="168" y="600" width="39" height="37"/>
+                                <rect key="frame" x="314" y="308" width="39" height="37"/>
                                 <connections>
                                     <action selector="pageChanged:" destination="8Ba-wG-iwV" eventType="valueChanged" id="6Js-4d-YHj"/>
                                 </connections>
@@ -233,15 +233,19 @@
                     <connections>
                         <outlet property="pageControl" destination="aBx-Jc-eci" id="mbo-8F-fjA"/>
                         <outlet property="scrollView" destination="7tV-i1-TPs" id="geI-OI-jfy"/>
+                        <segue destination="YOs-pg-FcS" kind="presentation" identifier="ShowDetail" id="906-5Z-Sw3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikg-oy-5mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608" y="870"/>
+            <point key="canvasLocation" x="276" y="804"/>
         </scene>
     </scenes>
     <resources>
         <image name="CloseButton" width="15" height="15"/>
         <image name="PriceButton" width="10" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="906-5Z-Sw3"/>
+    </inferredMetricsTieBreakers>
 </document>

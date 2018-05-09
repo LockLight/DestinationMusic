@@ -90,6 +90,9 @@ class SearchViewController: UIViewController {
             
             coordinator.animate(alongsideTransition: { (_) in
                 VC.view.alpha = 0
+                if self.presentedViewController != nil {
+                    self.dismiss(animated: true, completion: nil)
+                }
             }) { (_) in
                 VC.view.removeFromSuperview()
                 VC.removeFromParentViewController()
@@ -114,6 +117,7 @@ class SearchViewController: UIViewController {
                     self.showNetWorkError()
                 }
                 self.tableView.reloadData()
+                self.landScapeVC?.searchResultReceived()
             })
         }
 

@@ -25,6 +25,7 @@ class DetailViewController: UIViewController {
     
     var downloadTask:URLSessionDownloadTask?
     var searchResult:SearchResult!
+
     private var dismissStyle = AnimationStyle.Fade
 
     

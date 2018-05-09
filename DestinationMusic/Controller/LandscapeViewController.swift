@@ -13,7 +13,7 @@ class LandscapeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var searchResults = [SearchResult]()
+    var search:Search!
     private var firstTime = true
     private var downLoads = [URLSessionDownloadTask]()
     
@@ -40,7 +40,11 @@ class LandscapeViewController: UIViewController {
 
         if firstTime{
             firstTime = false
-            titleButtons(searchResults)
+            
+            switch search.state{
+            case .loading,.noResults,.notSearchYet: break
+            case .results(let list): titleButtons(list)
+            }
         }
     }
     
@@ -128,8 +132,9 @@ class LandscapeViewController: UIViewController {
         for (_,result) in searchResults.enumerated() {
             // 1
             let button = UIButton(type:.custom)
-            button.setBackgroundImage(#imageLiteral(resourceName: "LandscapeButton"), for: .normal)
-//            downloadImage(for: result, andPlaceOn: button)
+//            button.setBackgroundImage(#imageLiteral(resourceName: "LandscapeButton"), for: .normal)
+            button.setBackgroundImage(UIImage(named: "LandscapeButton"), for: .normal)
+            downloadImage(for: result, andPlaceOn: button)
         
             // 2
             button.frame = CGRect(x: x+paddingHorz,

@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "kind value"; ObjectID = "2KD-ef-a5M"; */
+"2KD-ef-a5M.text" = "kind value";
+
+/* Class = "UILabel"; text = "Artist Name"; ObjectID = "8lz-eS-OLj"; */
+"8lz-eS-OLj.text" = "Artist Name";
+
+/* Class = "UILabel"; text = "genre value"; ObjectID = "YSd-ej-KR3"; */
+"YSd-ej-KR3.text" = "genre value";
+
+/* Class = "UIButton"; normalTitle = "$9.99"; ObjectID = "a92-6Y-365"; */
+"a92-6Y-365.normalTitle" = "$9.99";
+
+/* Class = "UILabel"; text = "Genre:"; ObjectID = "hGy-aG-Nhm"; */
+"hGy-aG-Nhm.text" = "风格:";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "jNs-IU-6fa"; */
+"jNs-IU-6fa.text" = "类型:";
+
+/* Class = "UISegmentedControl"; oaf-jM-qDK.segmentTitles[0] = "All"; ObjectID = "oaf-jM-qDK"; */
+"oaf-jM-qDK.segmentTitles[0]" = "所有";
+
+/* Class = "UISegmentedControl"; oaf-jM-qDK.segmentTitles[1] = "Music"; ObjectID = "oaf-jM-qDK"; */
+"oaf-jM-qDK.segmentTitles[1]" = "音乐";
+
+/* Class = "UISegmentedControl"; oaf-jM-qDK.segmentTitles[2] = "Software"; ObjectID = "oaf-jM-qDK"; */
+"oaf-jM-qDK.segmentTitles[2]" = "软件";
+
+/* Class = "UISegmentedControl"; oaf-jM-qDK.segmentTitles[3] = "E-books"; ObjectID = "oaf-jM-qDK"; */
+"oaf-jM-qDK.segmentTitles[3]" = "电子书";
+
+/* Class = "UISearchBar"; placeholder = "App name, artist, song, album, e-book."; ObjectID = "vMG-oo-KIv"; */
+"vMG-oo-KIv.placeholder" = "应用名称,艺术家,歌曲,专辑,电子书.";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "vak-Hx-yn0"; */
+"vak-Hx-yn0.text" = "名称";

@@ -1,1 +1,5 @@
 # DestinationMusic
+
+- Codeble
+- MVVM
+- Localization
